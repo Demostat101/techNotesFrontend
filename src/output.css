@@ -1,3 +1,5 @@
+/* npx tailwindcss -i ./src/index.css -o ./src/output.css --watch */
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -106,9 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -554,13 +554,92 @@ video {
   display: none;
 }
 
-.text-\[50px\] {
-  font-size: 50px;
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.text-red-600 {
+.my-\[15px\] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-\[10px\] {
+  padding-left: 10px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.font-\[700\] {
+  font-weight: 700;
+}
+
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 *{
@@ -568,4 +647,10 @@ video {
   margin: 0;
   box-sizing: border-box;
   font-family: "Share Tech Mono", monospace;
+}
+
+body{
+  background: linear-gradient(rgba(177,156,217, 0.6), rgba(177,156,217,0.7)), url("../src/assets/background.jpg");
+  height: 100vh;
+  background-size: cover;
 }
