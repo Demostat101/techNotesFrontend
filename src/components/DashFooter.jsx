@@ -1,7 +1,5 @@
 
-
-import React from 'react'
-import { FaArrowRight, FaHouse } from 'react-icons/fa6'
+import { FaHouse } from 'react-icons/fa6'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 const DashFooter = () => {
