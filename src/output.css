@@ -629,25 +629,3 @@ body{
   height: 100vh;
   background-size: cover;
 }
-
-table, th, td {
-  border: 3px solid rgba(27, 16, 48, 0.8),;
-  border-collapse: collapse;
-  color: gray;
-}
-
-th,td{
-  background-color: whitesmoke;
-  color: black;
-  text-align: left;
-  padding-left: 10px;
-}
-
-td:nth-child(3) {
-  text-align: center;
-}
-
-td{
-  padding-bottom: 20px;
-  padding-top: 10px;
-}

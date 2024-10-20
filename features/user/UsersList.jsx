@@ -11,17 +11,23 @@ const UsersList = () => {
     error
   } = useGetUsersQuery();
 
+
   if (isLoading) {
     return <p>Loading...</p>
   } else if (isError) {
     return <p>{error?.data.message}</p>
   } else if (isSuccess) {
     const {ids} = users
+    console.log(users);
+    
+    
 
     const tableContent = ids?.length
         ? ids.map(userId => <User key={userId} userId={userId}/>)
         : null
-        return <table className="w-full border-collapse">
+
+        
+        return <table >
           <thead>
             <tr>
               <th className="">Username</th>

@@ -17,18 +17,20 @@ const User = ({userId}) => {
         const cellStatus = user.active ? '' : 'table__cell --inactive'
 
         return (
+            <>
             <tr>
                 <td className={`table__cell ${cellStatus}`} >{user.username}</td>
                 <td className={`table__cell ${cellStatus}`}>{userRoleString}</td>
-                <td className={`table__cell ${cellStatus}`}>
+                <td className={(`table__cell ${cellStatus}`)}>
                     <button 
-                    className=""
+                    className=" "
                     onClick={handleEdit}
                     >
-                        <FaPenToSquare size={30}/>
+                        <FaPenToSquare size={25}/>
                     </button>
                 </td>
             </tr>
+            </>
         )
     } else return null;
 }
