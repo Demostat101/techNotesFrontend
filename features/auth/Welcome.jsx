@@ -28,12 +28,12 @@ const Welcome = () => {
   return (
     <section>
       <p className="mb-[20px]">{today}</p>
-      <h1 className="text-[24px] font-[700]">Welcome!</h1>
-      <p className="flex place-items-center gap-[5px]">
+      <h1 className="text-[24px] font-[700] text-red-500">Welcome!</h1>
+      <p className="welcome-arrow">
         <FaArrowRight />
         <Link to="/dash/notes">View techNotes</Link>
       </p>
-      <p className="flex place-items-center gap-[5px]">
+      <p className="welcome-arrow">
         <FaArrowRight />
         <Link to="/dash/users">View User Settings</Link>
         

@@ -49,6 +49,14 @@ td:nth-child(3) {
   justify-content: center;
   border: none;
 }
+
+.welcome-arrow{
+  display: flex;
+  place-items: center;
+  gap:8px;
+}
+
+
 /* table, th, td {
     border: 2px solid rgba(27, 16, 48, 0.8),;
     /* border-collapse: collapse;
