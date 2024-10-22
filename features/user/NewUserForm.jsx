@@ -7,7 +7,6 @@ import { ROLES } from "../../config/Roles"
 const NewUserForm = () => {
     const navigate = useNavigate()
     const USER_REGEX = /^[a-zA-Z]{3,20}$/
-
     const PWD_REGEX = /^[A-Za-z0-9!@#$%]{4,12}$/
 
 
@@ -75,6 +74,38 @@ const NewUserForm = () => {
 
   return (
     <>
+        {
+            isError && <p>{error?.data?.message}</p>
+        }
+
+        <form action="" onSubmit={onSaveUserClicked}>
+            <div>
+                <h2>New User</h2>
+                <div>
+                    <button disabled={!canSave}><FaSave/></button>
+                </div>
+            </div>
+            <div>
+            <label htmlFor="username">
+                Username: <span>[3-20 letters]</span>
+            </label>
+            <input type="text" id="username" name="username" autoComplete="off" value={username} onChange={onUsernameChanged} />
+            </div>
+            <div>
+            <label htmlFor="password">
+                Password: <span>[4-12 letters chars incl. !@#%$]</span>
+            </label>
+            <input type="password" id="password" name="password" autoComplete="off" value={password} onChange={onPasswordChanged} />
+            </div>
+            <div>
+            <label htmlFor="roles">
+                Assigned Roles:
+            </label>
+            <select name="roles" id="roles" multiple={true} size={3} value={roles} onChange={onRolesChanged}>
+                {options}
+            </select>
+            </div>
+        </form>
       
     </>
   )
